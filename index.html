@@ -40,10 +40,13 @@ $ git checkout gh-pages
 
      </section>
      <section>
-	<h3>Some linux command</h3>
-	<p>
+	<h3>close firewall in fedora19</h3>
+	<p>To let others visit the webapp deployed in my Tomcat, I need to close the firewall:
 	<pre><code>
-	# firewall-config	
+	1.$ service iptables stop
+	2.$ vi /etc/selinux/config
+	  # change value of SELINUX to disable
+	3.$ firewall-config	
 	</code></pre>
 	</p>    
      </section>
