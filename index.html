@@ -46,18 +46,25 @@ _margin-left: value-3px;
      </section>
      <section>
      	<h3>css combining</h3>
-<pre><code>background 
-background-color:#CCFFFF; 
-background-image:url(图片路径); 
-background-repeat:repeat-x; 
-background-position:5px 4px; 
-代码简化为：background:#CFF url(图片路径) repeat-x 5px 4px 
+<pre><code>background-position:0 0;  
+background-repeat:no-repeat;  
+background-attachment:fixed;  
+background-color:#f00;  
+background-image:url(background.gif);  
+代码简化为：background: #f00 url(background.gif) no-repeat fixed 0 0;
 
-font 
-font-size:26px; 
-font-weight:bold; 
-font-family: “宋体”; 
-代码简化为：font:26px bold “宋体” 
+font-style:italic;  
+font-family:"Lucida Grande",sans-serif;  
+font-size:1em;  
+font-weight:bold;  
+font-variant:small-caps;  
+line-height:140%;  
+代码简化为：font:italic bold small-caps 1em/140% "lucida Grande",sans-serif;
+
+list-style-position:inside;  
+list-style-type:square;  
+list-style-image:url(image.gif); 
+list-style: url(image.gif) square inside;
 
 颜色值简化：#0088cc--#08c
 </code></pre>
