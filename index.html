@@ -29,8 +29,15 @@
       </header>
       <section>
       	<h3>Export and Import db under linux</h3>
+      	<p>Export db dvs to file dvs.sql:</p>
 <pre><code># mysqldump -u root -p dvs > dvs.sql
-# mysql -u root -p dvs < dvs.sql
+</code></pre>
+<p>Import dvs.sql to db dvs:</p>
+<pre><code># mysql -u root -p dvs < dvs.sql
+</code></pre>
+<p>Another way:</p>
+<pre><code>mysql>use dvs;
+mysql>source /home/abc/dvs.sql;
 </code></pre>
       </section>
       <section>
