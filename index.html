@@ -28,6 +28,22 @@
         </ul>-->
       </header>
       <section>
+      	<h3>Work with Remote IP</h3>
+<pre><code>
+su
+ssh $ip
+</code></pre>
+<h3>Copy local file to remote location</h3>
+<pre><code>scp filename  root@$ip:/var/www/html
+</code></pre>
+<h3>Copy local directory to remote location</h3>
+<pre><code>scp -r filefolder/  root@$ip:/var/www/html
+</code></pre>
+<h3>Apache 403 fobidden</h3>
+<pre><code>chmod -R 777 folder/
+</code></pre>
+      </section>
+      <section>
       	<h3>Export and Import db under linux</h3>
       	<p>Export db dvs to file dvs.sql:</p>
 <pre><code># mysqldump -u root -p dvs > dvs.sql
