@@ -28,10 +28,14 @@
         </ul>-->
       </header>
       <section>
+      	<h3>show table structure</h3>
+<pre><code>describe tablename;
+</code></pre>
+      </section>
+      <section>
       	<h3>Work with Remote IP</h3>
 <pre><code>
-su
-ssh $ip
+ssh root@ip
 </code></pre>
 <h3>Copy local file to remote location</h3>
 <pre><code>scp filename  root@$ip:/var/www/html
