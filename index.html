@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="http://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,6 +20,38 @@
         <p>Recording fruits everyday...</p>
 	<p><a href="http://hancongcs2c.github.io/">Another package</a></p>
       </header>
+      <section>
+      	<h3>font-family</h3>
+      	<div style="font-size:1.5em;"                     >
+<p style="font-family:'Lato', sans-serif;margin-bottom:0;">'Lato', sans-serif</p>
+<p style="font-family:'Raleway', sans-serif;margin-bottom:0;">'Raleway', sans-serif</p>
+<p style="font-family:'PT Sans',sans-serif;margin-bottom:0;">'PT Sans',sans-serif</p>
+<p style="font-family:'Wire One',arial, serif;margin-bottom:0;">'Wire One',arial, serif</p>
+<p style="font-family:source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;margin-bottom:0;">source-sans-pro, Helvetica, Arial, sans-serif, sans-serif
+</p>
+	
+</div>
+      </section>
+      <section>
+      	<h3>show table structure</h3>
+<pre><code>describe tablename;
+</code></pre>
+      </section>
+      <section>
+      	<h3>Work with Remote IP</h3>
+<pre><code>
+ssh root@ip
+</code></pre>
+<h3>Copy local file to remote location</h3>
+<pre><code>scp filename  root@$ip:/var/www/html
+</code></pre>
+<h3>Copy local directory to remote location</h3>
+<pre><code>scp -r filefolder/  root@$ip:/var/www/html
+</code></pre>
+<h3>Apache 403 fobidden</h3>
+<pre><code>chmod -R 777 folder/
+</code></pre>
+      </section>
       <section>
       	<h3>Export and Import db under linux</h3>
       	<p>Export db dvs to file dvs.sql:</p>
