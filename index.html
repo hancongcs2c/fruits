@@ -16,6 +16,26 @@
         <p>Recording fruits everyday...</p>
 	<p><a href="http://insekkei.github.io/">INSEKEI.TK</a></p>
       </header>
+       <section>
+	<h3>html5 web storage--page views statistics</h3>
+	<pre><code>//html5 web storage--localStorage--always there
+if (localStorage.pagecount) { 
+	localStorage.pagecount=parseInt(localStorage.pagecount) +1; 
+} else { 
+	localStorage.pagecount=1;
+} 
+document.write("local Visits "+ localStorage.pagecount + " time(s)."); 
+//html5  web storage--sessionStorage--exist before current window closed 
+if (sessionStorage.pagecount) { 
+	sessionStorage.pagecount=Number(sessionStorage.pagecount) +1; 
+} else { 
+	sessionStorage.pagecount=1;
+} 
+document.write("session Visits "+ sessionStorage.pagecount + " time(s)."); 
+
+//.setItem('key','value');.getItem('key');
+	</code></pre>
+      </section>
       <section>
 	<h3>small pics before big loaded...</h3>
 	<pre><code><div style="width:100%;height:100%;">
