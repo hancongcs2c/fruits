@@ -17,6 +17,26 @@
 	<p><a href="http://insekkei.github.io/">INSEKEI.TK</a></p>
       </header>
       <section>
+	<h3>CSS3 Media Queries</h3>
+	<pre><code>/* Default wide-screen styles */  
+@media all and (max-width: 1024px) {   
+/* styles for narrow desktop browsers and iPad landscape */  
+}   
+@media all and (max-width: 768px) {   
+/* styles for narrower desktop browsers and iPad portrait */  
+}   
+@media all and (max-width: 480px) {   
+/* styles for iPhone/Android landscape (and really narrow browser windows) */  
+}   
+@media all and (max-width: 320px) {   
+/* styles for iPhone/Android portrait */  
+}   
+@media all and (max-width: 240px) {   
+/* styles for smaller devices */  
+}   
+	</code></pre>
+      </section>
+      <section>
       	<h3>Jquery Method</h3>
 	We should use $() as little as possible to improve the efficiency of DOM traversal...
 	<pre><code>$('div.chapter a[@href*=wikipedia]').each(function(index){
