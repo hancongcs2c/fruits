@@ -16,6 +16,15 @@
         <p>Recording fruits everyday...</p>
 	<p><a href="http://insekkei.github.io/">INSEKEI.TK</a></p>
       </header>
+	 <section>
+               <h3>firefox中body到浏览器顶端的距离</h3>
+               <p>原因：子元素的margin-top冒泡给了父元素，可以给第一层父元>    素添加下面的样式来解决这个问题，优先级从高向低：
+               <pre><code>overflow:hidden;
+padding-top:1px;
+border:1px solid transparent;
+</code></pre>
+         </section>
+	
 	<section>
 		<h3>js Dom & jquery Dom</h3>
 		<pre><code>如：var $v =$("#v") ; //jQuery对象
